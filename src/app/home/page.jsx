@@ -32,14 +32,14 @@ const page = () => {
       </div>
       <div className="py-11 px-28 flex items-center justify-evenly">
         <div>
-          <Image src={men} width={305} height={280} />
+          <Image src={men} width={305} height={280} alt="pic"/>
         </div>
         <div className="w-[50%]">
           <h1 className="text-[40px] font-bold text-[#0a2540] mb-3">
             Find your next course.
           </h1>
           <div className="inp-search">
-            <Image src={search} />
+            <Image src={search} alt="pic"/>
             <input
               type="text"
               placeholder="Search 150,000 courses"
@@ -77,10 +77,10 @@ const page = () => {
         </p>
         <div className="flex justify-center gap-5 mt-12">
           <div className="w-[395px] h-[295px]">
-            <Image src={b1} />
+            <Image src={b1} alt="pic"/>
           </div>
           <div className="w-[395px] h-[295px]">
-            <Image src={b2} />
+            <Image src={b2} alt="pic"/>
           </div>
         </div>
       </div>
