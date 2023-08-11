@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: source sans pro;
+  color: #0a2540;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.inp-search {
+  width: 100%;
+  border-color: #ededed;
+  border-radius: 60px;
+  box-shadow: 0 2px 12px 2px #e2e2e2;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 17px 52px 18px 20px;
+  display: flex;
+  gap: 12px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.inp-search > input {
+  outline: none;
 }
